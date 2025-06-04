@@ -21,7 +21,7 @@
 | --------------------------------- | --------------------------- |
 | **CTFS** (Canadian Tire)          | OCR & rule-based parsing    |
 | **ATB** (Alberta Treasury Branch) | Full transaction extraction |
-| **Neo**                           | (coming soon)               |
+| **Neo**                           | Full transaction extraction |
 
 ---
 
@@ -75,11 +75,11 @@ It will expose REST endpoints for uploading and parsing statements.
 
 ---
 
-## 🧠 Categorization Logic
+## 🧠 Categorization Logic (Coming Soon)
 
-* 💡 Learns from your past input (stored in `categories.csv`) (planned)
-* 🧠 Matches descriptions based on keywords (planned)
-* 📜 Falls back to ChatGPT or rules for new entries (planned)
+* 💡 Learns from your past input (stored in `categories.csv`) 
+* 🧠 Matches descriptions based on keywords 
+* 📜 Falls back to ChatGPT or rules for new entries 
 
 ---
 
@@ -89,17 +89,6 @@ It will expose REST endpoints for uploading and parsing statements.
 Date,Amount,Category,Title,Note,Account
 2025-05-10,-50,Groceries,Fruits and Vegetables,,Neo
 2025-05-11,-18.78,Subscriptions,SPOTIFY STOCKHOLM,,Neo
-```
-
----
-
-## 📂 Project Structure
-
-```
-StatementExtractor/
-├── core/   → parsing logic, models, OCR
-├── cli/    → Picocli-based command line interface
-├── api/    → Spring Boot REST API (in progress)
 ```
 
 ---
