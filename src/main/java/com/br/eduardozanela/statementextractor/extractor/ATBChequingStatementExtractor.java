@@ -16,6 +16,7 @@ public class ATBChequingStatementExtractor implements BankStatementExtractor {
 		receivedTransactionDesc.add("INTERAC e-Transfer Received");
 		receivedTransactionDesc.add("Direct Deposit");
 		receivedTransactionDesc.add("Transfer From");
+		receivedTransactionDesc.add("Cash deposit");
 	}
 	
 	private static String extractPurchasesSection(String rawText) {
